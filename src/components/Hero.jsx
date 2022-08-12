@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel, Container } from "react-bootstrap";
-import r1 from "../images/1.jpeg";
-import r2 from "../images/2.jpeg";
+import r1 from "../images/2.jpeg";
+import r2 from "../images/r3.avif";
 
 function Hero() {
 	return (
