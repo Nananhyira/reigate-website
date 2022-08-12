@@ -15,7 +15,7 @@ function Hero() {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img className="d-block w-100" src={r2} alt="Second slide" />
+					<img className="d-block w-100" src={r1} alt="Second slide" />
 
 					<Carousel.Caption>
 						<h3>Second slide label</h3>
