@@ -10,8 +10,10 @@ function Hero() {
 				<Carousel.Item>
 					<img className="d-block w-100" src={r2} alt="First slide" />
 					<Carousel.Caption>
-						<h3>First slide label</h3>
-						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+						<h3>Banknote Processing Systems</h3>
+						<p>
+							Relying on innovative and reliable system for effective workflow.
+						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>

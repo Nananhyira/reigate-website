@@ -10,10 +10,12 @@ import {
 import r1 from "../images/l1.png";
 import { Link } from "react-router-dom";
 
+import "../App.css";
+
 function Navbars() {
 	return (
-		<Container fluid="md" sticky="top">
-			<Navbar bg="light" expand="lg">
+		<Container fluid sticky="top">
+			<Navbar style={{ padding: 0 }} bg="light" expand="lg">
 				<Container fluid>
 					<Navbar.Brand>
 						<Link className="done" to="/">
@@ -26,13 +28,17 @@ function Navbars() {
 							className="me-auto my-2 my-lg-0"
 							style={{ maxHeight: "100px" }}
 							navbarScroll>
-							<Nav.Link href="/">Home</Nav.Link>
-							<Nav.Link href="/about">About Us</Nav.Link>
+							<Nav.Link className="done" href="/">
+								Home
+							</Nav.Link>
+							<Nav.Link className="done" href="/about">
+								About Us
+							</Nav.Link>
 							<NavDropdown title="Products" id="navbarScrollingDropdown">
-								<NavDropdown.Item href="#action3">
+								<NavDropdown.Item className="done" href="#action3">
 									Counting Machine
 								</NavDropdown.Item>
-								<NavDropdown.Item href="#action4">
+								<NavDropdown.Item className="done" href="#action4">
 									Counting Machine
 								</NavDropdown.Item>
 								<NavDropdown.Divider />
@@ -40,7 +46,9 @@ function Navbars() {
 									Counting Machine
 								</NavDropdown.Item>
 							</NavDropdown>
-							<Nav.Link href="/contact">Contact Us</Nav.Link>
+							<Nav.Link href="/contact" className="done">
+								Contact Us
+							</Nav.Link>
 						</Nav>
 						<Form className="d-flex">
 							<Form.Control

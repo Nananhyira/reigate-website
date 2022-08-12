@@ -17,13 +17,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Rubiks", sans-serif;
-	color: #393c41;
+	color: #f3f9f8;
 }
 
-body {
-	width: 100%;
-	overflow-x: hidden;
-}
-.container-fluid {
-	padding: 0 !important;
-}
+.done{color:rgb(217, 231, 231);}
