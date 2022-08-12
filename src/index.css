@@ -10,14 +10,20 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: #71a09fed;
+	/* background-color: rgb(1, 0, 122); */
 }
 
 * {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-	font-family: "Rubiks", sans-serif;
-	color: #f3f9f8;
+	/* box-sizing: border-box !important;
+	padding: 0 !important; */
+	/* margin: 0 !important; */
+	font-family: "Rubiks", sans-serif !important;
+	color: hsla(210, 23%, 95%, 0.999) !important;
 }
 
-.done{color:rgb(217, 231, 231);}
+.done,
+a {
+	font-weight: bolder !important;
+	color: rgb(1, 0, 122) !important;
+	font-size: 16px !important;
+}

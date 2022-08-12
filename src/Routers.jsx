@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Navbars from "./components/Navbars";
 import AboutUs from "./components/AboutUs";
 import Produts from "./components/Products";
+import Services from "./components/Services";
 
 function Routers() {
 	return (
@@ -17,6 +18,7 @@ function Routers() {
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/about" element={<AboutUs />} />
 					<Route path="/product" element={<Produts />} />
+					<Route path="/services" element={<Services />} />
 				</Routes>
 			</BrowserRouter>
 		</Container>

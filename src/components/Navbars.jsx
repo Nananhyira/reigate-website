@@ -14,7 +14,7 @@ import "../App.css";
 
 function Navbars() {
 	return (
-		<Container fluid sticky="top">
+		<Container fluid sticky="top" fixed="top">
 			<Navbar style={{ padding: 0 }} bg="light" expand="lg">
 				<Container fluid>
 					<Navbar.Brand>
@@ -28,17 +28,16 @@ function Navbars() {
 							className="me-auto my-2 my-lg-0"
 							style={{ maxHeight: "100px" }}
 							navbarScroll>
-							<Nav.Link className="done" href="/">
-								Home
-							</Nav.Link>
-							<Nav.Link className="done" href="/about">
-								About Us
-							</Nav.Link>
-							<NavDropdown title="Products" id="navbarScrollingDropdown">
-								<NavDropdown.Item className="done" href="#action3">
+							<Nav.Link href="/">Home</Nav.Link>
+							<Nav.Link href="/about">About Us</Nav.Link>
+							<NavDropdown
+								title="Products"
+								className="done"
+								id="navbarScrollingDropdown">
+								<NavDropdown.Item href="#action3">
 									Counting Machine
 								</NavDropdown.Item>
-								<NavDropdown.Item className="done" href="#action4">
+								<NavDropdown.Item href="#action4">
 									Counting Machine
 								</NavDropdown.Item>
 								<NavDropdown.Divider />
@@ -46,9 +45,8 @@ function Navbars() {
 									Counting Machine
 								</NavDropdown.Item>
 							</NavDropdown>
-							<Nav.Link href="/contact" className="done">
-								Contact Us
-							</Nav.Link>
+							<Nav.Link href="/contact">Contact Us</Nav.Link>
+							<Nav.Link href="/services">Services</Nav.Link>
 						</Nav>
 						<Form className="d-flex">
 							<Form.Control
