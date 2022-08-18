@@ -1,14 +1,26 @@
 import React from "react";
 import { Carousel, Container } from "react-bootstrap";
 import r1 from "../images/2.jpeg";
-import r2 from "../images/r3.avif";
+import "./styles.css";
+
+import r3 from "../images/3.jpeg";
+import r4 from "../images/4.png";
 
 function Hero() {
 	return (
-		<Container fluid>
+		<Container
+			fluid
+			style={{
+				padding: 0,
+				boxSizing: "border-box ",
+				overflowX: "hidden",
+				scrollBehavior: "smooth",
+				margin: 0
+			}}>
 			<Carousel>
-				<Carousel.Item>
-					<img className="d-block w-100" src={r2} alt="First slide" />
+				<Carousel.Item
+					style={{ backgroundBlendMode: "overlay", backgroundColor: "red" }}>
+					<img className="d-block w-100" src={r4} alt="First slide" />
 					<Carousel.Caption>
 						<h3>Banknote Processing Systems</h3>
 						<p>
@@ -20,21 +32,23 @@ function Hero() {
 					<img className="d-block w-100" src={r1} alt="Second slide" />
 
 					<Carousel.Caption>
-						<h3>Second slide label</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						<h3>Banknote Processing Systems</h3>
+						<p>
+							Relying on innovative and reliable system for effective workflow.
+						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
 					<img
-						className="d-block w-100"
-						src="holder.js/800x400?text=Third slide&bg=20232a"
+						className="d-block w-100 slide&bg=20232a"
+						src={r3}
 						alt="Third slide"
 					/>
 
 					<Carousel.Caption>
-						<h3>Third slide label</h3>
+						<h3>Banknote Processing Systems</h3>
 						<p>
-							Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+							Relying on innovative and reliable system for effective workflow.
 						</p>
 					</Carousel.Caption>
 				</Carousel.Item>

@@ -11,11 +11,30 @@ import r1 from "../images/l1.png";
 import { Link } from "react-router-dom";
 
 import "../App.css";
+import "./styles.css";
 
 function Navbars() {
 	return (
-		<Container fluid sticky="top" fixed="top">
-			<Navbar style={{ padding: 0 }} bg="light" expand="lg">
+		<Container
+			style={{
+				padding: 0,
+				boxSizing: "border-box ",
+				overflowX: "hidden",
+				scrollBehavior: "smooth",
+				margin: 0,
+			}}
+			fluid
+			fixed="top">
+			<Navbar
+				style={{
+					padding: 0,
+					boxSizing: "border-box ",
+					overflowX: "hidden",
+					scrollBehavior: "smooth",
+					margin: 0,
+				}}
+				bg="light"
+				expand="lg">
 				<Container fluid>
 					<Navbar.Brand>
 						<Link className="done" to="/">

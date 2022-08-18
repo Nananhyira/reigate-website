@@ -9,8 +9,10 @@
 	flex-wrap: inherit;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #71a09fed;
+	/* background-color: #71a09fed; */
+	background-color: rgb(4, 151, 181);
 	/* background-color: rgb(1, 0, 122); */
+	position: relative;
 }
 
 * {
